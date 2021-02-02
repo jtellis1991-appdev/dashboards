@@ -1,3 +1,10 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  get("/", {:controller => "application", :action => "take_me_home"})
+
+  get("/forex", {:controller => "application", :action => "pick_rate_one"})
+
+  get("/forex/:pickone", {:controller => "application", :action => "pick_rate_two"})
+
+  get("/forex/:pickone/:picktwo", {:controller => "application", :action => "compute_forex"})
 end

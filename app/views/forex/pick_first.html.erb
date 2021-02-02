@@ -1,0 +1,12 @@
+<h1>Currency pairs</h1>
+
+<p>
+Go <a href="/">back</a>.
+</p>
+
+<ul>
+<% @firstpicks.each do |option| %>
+  <li><a href="/forex/<%= option %>">Convert 1 <%= option %> to...</a></li>
+
+<% end %>
+</ul>

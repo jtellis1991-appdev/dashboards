@@ -1,0 +1,15 @@
+<h1>Convert <%= @pickone %></h1>
+
+<p>
+Go <a href="/forex">back</a>.
+</p>
+
+<ul>
+<% @secondpicks.each do |option| %>
+  <li>
+  <a href="/forex/<%= @pickone %>/<%= option %>">Convert 1 <%= @pickone %> to <%= option %>...
+  </a>
+  </li>
+
+<% end %>
+</ul>
